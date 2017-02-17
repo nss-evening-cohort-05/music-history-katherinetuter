@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar {
+	background-color: #4DD7FA;
+	border: 2px solid black;
+}
+
+.filter-menu {}
