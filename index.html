@@ -13,53 +13,55 @@
 			<li><a href="#">profile</li>
 		</ul>
 	</div>
-<!-- code for song filter menu (blue) -->
-	<div class="filter-menu">
-		 Song length:<br>
-		 <input id="song-slider" type="range" name="length" min="" max=""> 
-<!-- dropdown menu for artists -->
-		Artist:<br>
-		<select name="artists">
-			<option value="artist-1">Opeth</option>
-			<option value="artist-2">Bonobo</option>
-			<option value="artist-3">Air</option>
-			<option value="artist-4">Radiohead</option>
-			<option value="artist-5">A Tribe Called Red</option>
-		</select>
-<!-- dropdown menu for albums -->
-		Album:<br>
-		<select name="albums">
-			<option value="album-1">artist 1</option>
-			<option value="album-2">artist 2</option>
-			<option value="album-3">artist 3</option>
-			<option value="album-4">artist 4</option>
-			<option value="album-5">artist 5</option>
-		</select>
-<!-- checkboxes for music genres -->
-		Genre:<br>
-		<input id="rock" type="checkbox" value="rock">Rock
-		<input id="pop" type="checkbox" value="pop">Pop
-		<input id="blues" type="checkbox" value="blues">Blues
-		<input id="classical" type="checkbox" value="classical">Classical
-		<input id="jazz" type="checkbox" value="jazz">Jazz
-		<input id="hip-hop" type="checkbox" value="hip-hop">Hip-hop
-<!-- filter button -->
-		<button name="filter">Filter</button>
-		
-	</div>
-<!-- code for song info menu (yellow) -->
-	<div class="song-info">
-		<h1>Reverie/Harlequin Forest</h1>
-		<p>Opeth | Ghost Reveries | Black Metal</p>
+<!-- code for song filter menu (blue) w/ flexbox -->
+		<div class="container"> 
+		<div class="filter-menu">
+			 Song length:<br><br>
+			 <input id="song-slider" type="range" name="length" min="" max=""><br><br>
+	<!-- dropdown menu for artists -->
+			<br>Artist:<br>
+			<select name="artists">
+				<option value="artist-1">Opeth</option>
+				<option value="artist-2">Bonobo</option>
+				<option value="artist-3">Air</option>
+				<option value="artist-4">Radiohead</option>
+				<option value="artist-5">A Tribe Called Red</option>
+			</select><br>
+	<!-- dropdown menu for albums -->
+			<br>Album:<br>
+			<select name="albums">
+				<option value="album-1">Ghost Reveries</option>
+				<option value="album-2">The North Borders</option>
+				<option value="album-3">In Rainbows</option>
+				<option value="album-4">Moon Safari</option>
+				<option value="album-5">Nation II Nation</option>
+			</select><br>
+	<!-- checkboxes for music genres -->
+			<br><ul class="genre">Genre:</ul><br>
+			<li><input id="rock" type="checkbox" value="rock">Rock</li>
+			<li><input id="pop" type="checkbox" value="pop">Pop</li>
+			<li><input id="blues" type="checkbox" value="blues">Blues</li>
+			<li><input id="classical" type="checkbox" value="classical">Classical</li>
+			<li><input id="jazz" type="checkbox" value="jazz">Jazz</li>
+			<li><input id="hip-hop" type="checkbox" value="hip-hop">Hip-hop</li>
+	<!-- filter button -->
+			<br><button id="filter-btn" name="filter">Filter</button>
+			
+		</div>
+	<!-- code for song info menu (yellow) w/ flexbox -->
+		<div class="song-info">
+			<h1>Reverie/Harlequin Forest</h1>
+			<p>Opeth | Ghost Reveries | Black Metal</p>
 
-		<h1>Sisters</h1>
-		<p>A Tribe Called Red | Nation II Nation | Dance</p>
+			<h1>Sisters</h1>
+			<p>A Tribe Called Red | Nation II Nation | Dance</p>
 
-		<h1>Sisters</h1>
-		<p>A Tribe Called Red | Nation II Nation | Dance</p>
+			<h1>Reckoner</h1>
+			<p>Radiohead | In Rainbows | Rock</p>
 
-		<h1>Cirrus</h1>
-		<p>Bonobo | The North Borders | Dance</p>
+			<h1>Cirrus</h1>
+			<p>Bonobo | The North Borders | Dance</p>
+		</div>
 	</div>
 </body>
 </html>
