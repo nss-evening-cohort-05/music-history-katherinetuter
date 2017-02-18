@@ -1,0 +1,97 @@
+/*styling for entire page*/ 
+* {
+	font-family: sans-serif;
+	list-style-type: none;
+}
+
+/*styling a href links*/
+a:link {
+	color: black;
+	text-decoration: none;
+
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+
+}
+
+a:active {
+	color: black;
+	text-decoration: none;
+
+}
+
+/*styling nav menu*/
+.navbar {
+	background-color: #FFB4B0;
+	list-style-type: none;
+	font-size: 1.5em;
+	border: 3px solid black;
+	
+}
+.navbar li {
+	display: inline;
+	list-style-type: none;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+/*flexbox for main page contents*/
+.container {
+	display: inline-flex;
+	width: 100%;
+
+}
+
+/*styling menu to filter songs*/
+.filter-menu {
+	background-color: #4DD7FA;
+	border: 3px solid black;
+	font-size: 1.25em;
+	text-align: center;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	flex: 1;
+}
+
+.genre ~ li {
+	float: left;
+	padding-left: 5px;
+}
+
+.genre ~ li:nth-child(odd){
+	clear: left;
+	padding-left: 5px;
+}
+
+.filter-btn {
+    margin-left: 30px;
+    }
+
+/*styling song info menu*/
+.song-info {
+	background-color: #FEFAC0;
+	color: #black;
+	border: 3px solid black;
+	font-size: 1.5em
+	padding-top: 35px;
+	padding-left: 15px;
+	margin-top: 5px;
+	flex: 3;
+}
+
+.song-info h1 {
+	color: #785616;
+	font-size: 1.75em;
+}

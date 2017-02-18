@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music History</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+<!-- code for navbar menu (red)-->
+	<div class="navbar">
+		<ul>
+			<li><a href="#">view music</li>
+			<li><a href="#">add music</li>
+			<li><a href="#">profile</li>
+		</ul>
+	</div>
+<!-- code for song filter menu (blue) w/ flexbox -->
+		<div class="container"> 
+		<div class="filter-menu">
+			 Song length:<br><br>
+			 <input id="song-slider" type="range" name="length" min="" max=""><br><br>
+	<!-- dropdown menu for artists -->
+			<br>Artist:<br>
+			<select name="artists">
+				<option value="artist-1">Opeth</option>
+				<option value="artist-2">Bonobo</option>
+				<option value="artist-3">Air</option>
+				<option value="artist-4">Radiohead</option>
+				<option value="artist-5">A Tribe Called Red</option>
+			</select><br>
+	<!-- dropdown menu for albums -->
+			<br>Album:<br>
+			<select name="albums">
+				<option value="album-1">Ghost Reveries</option>
+				<option value="album-2">The North Borders</option>
+				<option value="album-3">In Rainbows</option>
+				<option value="album-4">Moon Safari</option>
+				<option value="album-5">Nation II Nation</option>
+			</select><br>
+	<!-- checkboxes for music genres -->
+			<br>Genre:<br>
+			<ul class="genre"></ul>
+			<li><input id="rock" type="checkbox" value="rock">Rock</li>
+			<li><input id="pop" type="checkbox" value="pop">Pop</li>
+			<li><input id="blues" type="checkbox" value="blues">Blues</li>
+			<li><input id="classical" type="checkbox" value="classical">Classical</li>
+			<li><input id="jazz" type="checkbox" value="jazz">Jazz</li>
+			<li><input id="hip-hop" type="checkbox" value="hip-hop">Hip-hop</li>
+	<!-- filter button -->
+			<br><br><button id="filter-btn" name="filter">Filter</button>
+			
+		</div>
+	<!-- code for song info menu (yellow) w/ flexbox -->
+		<div class="song-info">
+			<h1>Reverie/Harlequin Forest</h1>
+			<p>Opeth | Ghost Reveries | Black Metal</p>
+
+			<h1>Sisters</h1>
+			<p>A Tribe Called Red | Nation II Nation | Dance</p>
+
+			<h1>Reckoner</h1>
+			<p>Radiohead | In Rainbows | Rock</p>
+
+			<h1>Cirrus</h1>
+			<p>Bonobo | The North Borders | Dance</p>
+		</div>
+	</div>
+<script type="text/javascript" src="./songs.js"></script>
+</body>
+</html>
