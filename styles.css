@@ -1,7 +1,5 @@
 /*styling for entire page*/ 
 * {
-	margin: 2px;
-	padding: 2px;
 	font-family: sans-serif;
 	list-style-type: none;
 }
@@ -59,22 +57,26 @@ a:active {
 	border: 3px solid black;
 	font-size: 1.25em;
 	text-align: center;
-	padding-right: 20px;
-	margin-top: -10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
 	flex: 1;
 }
 
 .genre ~ li {
 	float: left;
+	padding-left: 5px;
 }
 
 .genre ~ li:nth-child(odd){
 	clear: left;
+	padding-left: 5px;
 }
 
 .filter-btn {
-    width: 180px;
-    height: 80px;
+    margin-left: 30px;
     }
 
 /*styling song info menu*/
@@ -85,7 +87,7 @@ a:active {
 	font-size: 1.5em
 	padding-top: 35px;
 	padding-left: 15px;
-	margin-top: -10px;
+	margin-top: 5px;
 	flex: 3;
 }
 
