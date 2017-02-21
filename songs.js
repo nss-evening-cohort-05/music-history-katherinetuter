@@ -21,31 +21,15 @@ console.log(typos);
 
 //convert string to array
 var songArray = typos.replace(/[>]/g, "-")
-				.split('"');
-console.log(songArray);
+				.split(',');
 
-//loop thru array
-// for (var i=0; i < typos.length; i++) {
-//     var printSongs ="";
-//     printSongs += "<br>"+typos[i];
-//     }
-//    return printSongs;
 
+ 
+//Add each string to the DOM in index.html in the main content area.
+for (var i=0; i < songArray.length; i++) {
+	document.getElementById("songs").innerHTML += songArray[i] + "<br>";
+}
 
 
 
 
-
-//add to beginning of array
-
-document.getElementById("songs").innerHTML += songArray;
-
-//add to end of array
-songArray.push("songs");
-console.log(songArray);
-
-
-
-
-// Must add each string to the DOM in index.html in the main content area.
-//document.getElementById("song-info").innerHTML = addMusic();
